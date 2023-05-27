@@ -81,7 +81,7 @@ const MyProjects = (props) => {
             <div className='projects__container'>
                 <h5 className={'projects__title'}>Место Реакт</h5>
                 <button className={'projects__description'} onClick={(e)=>openMestoReact()}>Подробнее...</button>
-                <a href='#'>
+                <a href='https://andoreides.github.io/Portfolio-mesto/'>
                     <img className='projects__img' src={'https://avatars.githubusercontent.com/u/102199209?v=4'} />
                 </a>
             </div>
@@ -100,9 +100,9 @@ const MyProjects = (props) => {
                 </a>
             </div>
             <div className='projects__container'>
-                <h5 className={'projects__title'}>Todo React</h5>
+                <h5 className={'projects__title'}>Balance React</h5>
                 <button className={'projects__description'} onClick={(e) => openTodoReact()} >Подробнее...</button>
-                <a href='#'>
+                <a href='https://Andoreides.github.io/balance-project'>
                     <img className='projects__img' src={'https://avatars.githubusercontent.com/u/102199209?v=4'} />
                 </a>
             </div>
