@@ -1,0 +1,134 @@
+.popup__close {
+    position: absolute;
+    top: -35px;
+    cursor: pointer;
+    right: -35px;
+    width: 32px;
+    height: 32px;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    border: none;
+    background: url(../../krest.svg);
+    background-position: 50%;
+}
+
+.popup__close:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 640px) {
+    .popup__close {
+        width: 20px;
+        height: 20px;
+        /* top: -21px; */
+        right: 0;
+        background-size: 20px 20px;
+    }
+}
+
+.popup__form {
+    max-width: 358px;
+    min-height: 182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popup__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 0 50px;
+    padding: 0;
+    color: #000000;
+    align-self: flex-start;
+}
+
+
+@media screen and (max-width: 642px) {
+    .popup__title {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 25px 22px 75px;
+    }
+}
+
+.popup__container {
+    display: flex;
+    padding: 34px 36px 37px;
+    box-sizing: border-box;
+
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    width: 430px;
+    flex-direction: column;
+    background-color: #ffff;
+
+}
+
+@media screen and (max-width: 640px) {
+    .popup__container {
+        width: 282px;
+        padding: 25px 22px;
+    }
+
+}
+
+.popup {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s linear, opacity 0.2s linear;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0,0, .5);
+    z-index: 3;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_opened {
+    /* transition: visibility 0s, opacity 0.5s linear;
+    visibility: visible; */
+    /* transform: translateY(0%) scale(100%); */
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}
+
+.popup__button {
+    width: 323px;
+    height: 50px;
+    background: #000000;
+    background-position: center;
+    border-radius: 2px;
+    border: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 18px;
+    transition: opacity 0.1s ease-out;
+    border-radius: 18px;
+}
+
+.popup__button:hover {
+    opacity: 0.8;
+}
+
+.popup__button-submit{
+    margin-left: 18px;
+}
+
+@media screen and (max-width: 640px) {
+    .popup__button {
+        width: 238px;
+        min-height: 46px;
+        font-size: 14px;
+    }
+}

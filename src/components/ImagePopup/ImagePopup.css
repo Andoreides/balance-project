@@ -1,0 +1,30 @@
+.popup__gallery {
+    display: flex;
+
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+    text-align: center;
+
+}
+
+.popup__image {
+    /* width: 816px;
+    height: 540px; */
+    max-width: 75vw;
+    max-height: 75vh;
+}
+
+.popup__zoom-paragraph {
+    position: absolute;
+    bottom: -280px;
+    /*font-family: 'Inter';*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    /*line-height: 15px;*/
+    width: 460px;
+    height: 243px;
+    background-color: white;
+    color: black;
+}

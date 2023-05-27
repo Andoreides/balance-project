@@ -1,0 +1,32 @@
+.MyInput {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 37px;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.MyInput:focus {
+    outline: none;
+    border-color: #6699ff;
+    box-shadow: 0 0 10px #6699ff;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1)
+    }
+}

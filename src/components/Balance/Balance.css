@@ -1,0 +1,20 @@
+.balance__span {
+    width: 100%;
+    text-align: center;
+    animation: gradient 2.4s infinite ease-in-out;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    font-size: 50px;
+    text-indent: 10px;
+}
+
+
+.a01{
+    animation-delay: 0.1s;
+}
+
+.balance__div {
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-direction: column;
+}
