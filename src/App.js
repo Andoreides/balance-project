@@ -84,13 +84,19 @@ function App() {
     }
 
     const changeProfile = (e) => {
-        e.preventDefault();
-        dispatch({type: CHANGE_YOUR_NAME, payload: newName })
-        dispatch({type: CHANGE_YOUR_SURNAME, payload: newSurname })
-        dispatch({type: CHANGE_AVATAR_URL, payload: avatar})
-        setPopupUserOpen(false);
-        setNewName('');
-        setNewSurname('');
+        if (newName && newSurname && avatar) {
+            e.preventDefault();
+            dispatch({type: CHANGE_YOUR_NAME, payload: newName })
+            dispatch({type: CHANGE_YOUR_SURNAME, payload: newSurname })
+            dispatch({type: CHANGE_AVATAR_URL, payload: avatar})
+            setPopupUserOpen(false);
+            setNewName('');
+            setNewSurname('');
+        } else {
+            e.preventDefault();
+            alert('Enter values')
+        }
+
     }
 
   return (
